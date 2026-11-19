@@ -14,7 +14,7 @@ else
 fi
 versions=( "${versions[@]%/}" )
 
-now="$(date --utc '+%s')"
+now="$(date -u '+%s')"
 
 for version in "${versions[@]}"; do
 	rcVersion="${version%-rc}"
